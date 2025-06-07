@@ -20,6 +20,6 @@
 ### Code links
 
 - [Template code](01-template.html)
-- [Exercise code](02-excercise.html)
+- [Exercise code](02-exercise.html)
 
 ---
