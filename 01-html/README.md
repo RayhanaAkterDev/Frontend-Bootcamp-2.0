@@ -36,4 +36,4 @@ Each topic contains:
 ---
 
 ✍ Author: Rayhana Akter Sumaya  
-📧 Email: [rayhanaaktersumaya.dev@gmail.com](rayhanaaktersumaya.dev@gmail.com)
+📧 Email: [rayhanaaktersumaya.dev@gmail.com](mailto:rayhanaaktersumaya.dev@gmail.com)
