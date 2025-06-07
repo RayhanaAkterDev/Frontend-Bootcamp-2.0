@@ -6,20 +6,21 @@ This folder contains foundational HTML5 concepts essential for every frontend de
 
 ## 🔖 Topics Covered
 
-| Topic Nam                         | Description                                                     |
-|-----------------------------------|-----------------------------------------------------------------|
-| 01-basic-structure                | HTML boilerplate, `<!DOCTYPE>`, `<head>`, `<body>`              |
-| 02-text-elements                  | Headings, paragraphs, line breaks, and `<span>`                 |
-| 03-lists-and-links                | Ordered & unordered lists, anchor tags                          |
-| 04-images-and-media               | Images, audio, video, iframe                                    |
-| 05-tables                         | Creating tables using `<table>`, `<tr>`, `<td>`                 |
-| 06-forms                          | Basic forms, input types, labels, buttons                       |
-| 06.1-advanced-form-elements       | Validation, `<fieldset>`, `<legend>`, `<select>`, `<textarea>`  |
-| 07-semantic-tags                  | Semantic elements: `<header>`, `<main>`, `<article>`, `<footer>`|
-| 08-block-and-inline-elements      | Differences between block and inline elements                   |
-| 09-accessibility-demo             | ARIA roles, alt text, label associations                        |
-| 10-html-entities                  | HTML symbols and entities like &lt;, &copy;                     |
-| README                            | Folder overview and summary                                     |
+| Topic Name                        | Description                                                     |
+|----------------------------------|-----------------------------------------------------------------|
+| 01-boilerplate                   | Reusable HTML template with proper document structure           |
+| 02-basic-structure               | Explains HTML layout using `<!DOCTYPE>`, `<head>`, `<body>`     |
+| 03-text-elements                 | Headings, paragraphs, line breaks, and `<span>`                 |
+| 04-lists-and-links               | Ordered & unordered lists, anchor tags                          |
+| 05-images-and-media              | Images, audio, video, iframe                                    |
+| 06-tables                        | Creating tables using `<table>`, `<tr>`, `<td>`                 |
+| 07-forms                         | Basic forms, input types, labels, buttons                       |
+| 07.1-advanced-form-elements      | Validation, `<fieldset>`, `<legend>`, `<select>`, `<textarea>`  |
+| 08-semantic-tags                 | Semantic elements: `<header>`, `<main>`, `<article>`, `<footer>`|
+| 09-block-and-inline-elements     | Differences between block and inline elements                   |
+| 10-accessibility-demo            | ARIA roles, alt text, label associations                        |
+| 11-html-entities                 | HTML symbols and entities like &lt;, &copy;                     |
+| README                           | Folder overview and summary                                     |
 
 ---
 
