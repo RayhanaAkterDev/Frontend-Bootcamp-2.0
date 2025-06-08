@@ -1,0 +1,78 @@
+<!--
+    Topic: HTML Images and Media
+    Purpose: Demonstrates how to use images, audio, video, and iframes in HTML.
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-06-08
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Template page demonstrating HTML images and media."
+        />
+        <title>HTML Images and Media</title>
+    </head>
+    <body>
+        <h1>HTML Images and Media</h1>
+
+        <!-- Images with absolute URL, size and title attributes -->
+        <figure>
+            <img
+                width="600"
+                height="350"
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1746908592757-2c1d682b71db?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="online image"
+                title="Click for details"
+            />
+            <figcaption>Online image from Unsplash</figcaption>
+        </figure>
+
+        <!-- Images with relative path -->
+        <figure>
+            <img
+                width="400"
+                loading="lazy"
+                src="../../00-assets/images/dog-image.jpeg"
+                alt="Local Dog Photo"
+            />
+            <figcaption>Local image of a dog</figcaption>
+        </figure>
+
+        <!-- HTML5 Audio Player -->
+        <h2>Audio Example</h2>
+        <audio controls>
+            <source src="song.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- HTML5 Video Player -->
+        <h2>Video Example</h2>
+        <video width="600" autoplay loop muted controls>
+            <source
+                src="../../00-assets/videos/local-video.mp4"
+                type="video/mp4"
+            />
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Embedded YouTube Video using iframe -->
+        <h2>Embedded YouTube Video</h2>
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/CFiCdpnn-jo?si=uoUpnZQQbPIjcfGr"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+        ></iframe>
+    </body>
+</html>
