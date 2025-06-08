@@ -1,0 +1,120 @@
+<!--
+    Topic: HTML Lists & Links
+    Purpose: Demonstrate the usage of HTML list types and hyperlink variations in a semantic layout.
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-06-08
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Template page demonstrating HTML lists & links."
+        />
+        <title>HTML Lists & Links</title>
+    </head>
+    <body>
+        <h1>HTML Lists & Links</h1>
+
+        <!-- HTML Unordered List -->
+        <section id="unorderedList">
+            <h2>Unordered List</h2>
+            <ul>
+                <li>Milk</li>
+                <li>Eggs</li>
+                <li>Rice</li>
+            </ul>
+        </section>
+
+        <!-- HTML Ordered List -->
+        <section>
+            <h2>Ordered List</h2>
+            <ol>
+                <li>Wake up early</li>
+                <li>Study HTML</li>
+                <li>Practice coding</li>
+                <li>Write LinkedIn post</li>
+            </ol>
+        </section>
+
+        <!-- Nested List -->
+        <section>
+            <h2>Nested Unordered List</h2>
+            <ul>
+                <li>
+                    Colors
+                    <ul>
+                        <li>Red</li>
+                        <li>Blue</li>
+                        <li>
+                            Pink
+                            <ul>
+                                <li>Rose-pink</li>
+                                <li>Crimson</li>
+                            </ul>
+                        </li>
+                        <li>Green</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Description List -->
+        <section>
+            <h2>Description List</h2>
+            <dl role="list">
+                <dt>HTML</dt>
+                <dd role="listitem">
+                    HyperText Markup Language — used to structure web pages.
+                </dd>
+
+                <dt>Element</dt>
+                <dd role="listitem">
+                    A building block of HTML with opening and closing tags.
+                </dd>
+
+                <dt>Attribute</dt>
+                <dd role="listitem">
+                    Provides additional information about an element.
+                </dd>
+            </dl>
+        </section>
+
+        <hr />
+
+        <!-- Hyperlinks -->
+        <section>
+            <h2>External Links</h2>
+            <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                MDN HTML Docs
+            </a>
+            <br />
+            <a href="/files/html-cheatsheet.pdf" download>
+                Download HTML Cheat Sheet (PDF)
+            </a>
+        </section>
+
+        <section>
+            <h2>Internal Links</h2>
+            <p>
+                You can also add internal links to other pages or link to a
+                section within the same page.
+            </p>
+            <nav>
+                <a href="03-note.md" type="text/markdown"
+                    >HTML List & Links Note</a
+                >
+                <br />
+                <a href="#unorderedList">Link to Unordered List</a>
+            </nav>
+        </section>
+    </body>
+</html>
