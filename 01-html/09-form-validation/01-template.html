@@ -1,0 +1,100 @@
+<!--
+    Topic: Form Validation (HTML Only)
+    Purpose: Demonstrates native HTML5 form validation attributes.
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-06-10
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Template demonstrating HTML5 native form validation."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Form Validation</title>
+    </head>
+    <body>
+        <h1>HTML Form Validation (Native)</h1>
+        <p>* Required field</p>
+
+        <form action="/submit-validation" method="post" novalidate>
+            <p>Try submitting the form to see validation messages.</p>
+
+            <fieldset>
+                <legend>Registration Form</legend>
+
+                <label for="username">Username* (5-15 letters/numbers):</label
+                ><br />
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    pattern="^[a-zA-Z0-9]{5,15}$"
+                    required
+                    title="5 to 15 alphanumeric characters"
+                    autocomplete="username"
+                />
+                <br /><br />
+
+                <label for="email">Email*:</label><br />
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    title="Please enter a valid email address"
+                />
+                <br /><br />
+
+                <label for="password">Password* (min 6 chars):</label><br />
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    minlength="6"
+                    required
+                    title="At least 6 characters"
+                    autocomplete="new-password"
+                />
+                <br /><br />
+
+                <label for="age">Age* (18 to 99):</label><br />
+                <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    min="18"
+                    max="99"
+                    required
+                    title="Enter age between 18 and 99"
+                />
+                <br /><br />
+
+                <label for="website">Website (optional, URL format):</label
+                ><br />
+                <input
+                    type="url"
+                    id="website"
+                    name="website"
+                    placeholder="https://example.com"
+                    title="Enter a valid URL starting with http:// or https://"
+                    autocomplete="off"
+                />
+                <br /><br />
+
+                <input type="checkbox" id="terms" name="terms" required />
+                <label for="terms">Accept terms and conditions*</label>
+                <br /><br />
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
