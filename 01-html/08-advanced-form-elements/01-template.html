@@ -1,0 +1,180 @@
+<!--
+    Topic: Advanced Form Elements
+    Purpose: Demonstrates advanced form elements in HTML.
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-06-10
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Template page demonstrating advanced form elements."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Advanced Form Elements</title>
+    </head>
+    <body>
+        <h1>Advanced Form Elements</h1>
+
+        <form
+            action="/submit-advanced"
+            method="post"
+            aria-describedby="form-desc"
+        >
+            <p id="form-desc">All fields marked with * are required.</p>
+
+            <!-- ANCHOR: Personal Info Section -->
+            <fieldset>
+                <legend>👤 Personal Info</legend>
+
+                <label for="fullname">Full Name*:</label>
+                <input type="text" id="fullname" name="fullname" />
+                <br /><br />
+
+                <label for="age">Age (18–99)*:</label>
+                <input type="number" id="age" name="age" />
+                <br /><br />
+
+                <label for="email">Email*:</label>
+                <input type="email" id="email" name="email" />
+                <br /><br />
+
+                <label for="phone">Phone Number*:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+1234567890"
+                />
+                <br /><br />
+
+                <label for="website">Website URL:</label>
+                <input
+                    type="url"
+                    id="website"
+                    name="website"
+                    placeholder="https://example.com"
+                />
+            </fieldset>
+
+            <br />
+
+            <!-- ANCHOR: Preferences Section -->
+            <fieldset>
+                <legend>🎨 Preferences</legend>
+
+                <label for="favColor">Favorite Color:</label>
+                <input type="color" id="favColor" name="favColor" />
+                <br /><br />
+
+                <label for="satisfaction">Satisfaction (1–10):</label>
+                <input type="range" id="satisfaction" name="satisfaction" />
+                <br /><br />
+
+                <label for="birthdate">Date of Birth:</label>
+                <input type="date" id="birthdate" name="birthdate" />
+            </fieldset>
+
+            <br />
+
+            <!-- ANCHOR: Account Setup Section -->
+            <fieldset>
+                <legend>🔐 Account Setup</legend>
+
+                <label for="username">Username* (alphanumeric only):</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    aria-describedby="usernameHelp"
+                />
+                <small id="usernameHelp">
+                    5–15 characters, letters & numbers only
+                </small>
+                <br /><br />
+
+                <label for="password">Password*:</label>
+                <input type="password" id="password" name="password" />
+            </fieldset>
+
+            <br />
+
+            <!-- ANCHOR: File Upload -->
+            <label for="resume">Upload Resume (PDF):</label>
+            <input
+                type="file"
+                id="resume"
+                name="resume"
+                accept="application/pdf"
+            />
+            <br /><br />
+
+            <!-- ANCHOR: Skill Input with Datalist -->
+            <label for="skill">Top Skill:</label>
+            <input list="skills" id="skill" name="skill" />
+            <datalist id="skills">
+                <option value="HTML" />
+                <option value="CSS" />
+                <option value="JavaScript" />
+                <option value="Python" />
+                <option value="C++" />
+            </datalist>
+            <br /><br />
+
+            <!-- ANCHOR: Skill Level Dropdown -->
+            <label for="skillLevel">Skill Level:</label>
+            <select id="skillLevel" name="skillLevel">
+                <option value="">-- Select Level --</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+            <br /><br />
+
+            <!-- ANCHOR: Preferred Contact Method (Radio Buttons) -->
+            <fieldset>
+                <legend>Preferred Contact Method*</legend>
+                <label>
+                    <input type="radio" name="contact" value="email" />
+                    Email
+                </label>
+                <label>
+                    <input type="radio" name="contact" value="phone" />
+                    Phone
+                </label>
+                <label>
+                    <input type="radio" name="contact" value="none" />
+                    No Contact
+                </label>
+            </fieldset>
+            <br /><br />
+
+            <!-- ANCHOR: Newsletter Subscription (Checkbox) -->
+            <label>
+                <input type="checkbox" id="subscribe" name="subscribe" />
+                Subscribe to newsletter
+            </label>
+            <br /><br />
+
+            <!-- ANCHOR: Comments (Textarea) -->
+            <label for="comments">Comments:</label>
+            <textarea
+                id="comments"
+                name="comments"
+                rows="4"
+                cols="40"
+                placeholder="Your feedback here..."
+            ></textarea>
+            <br /><br />
+
+            <!-- ANCHOR: Form Actions -->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>
