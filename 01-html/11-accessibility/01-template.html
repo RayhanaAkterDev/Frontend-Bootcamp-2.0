@@ -1,0 +1,159 @@
+<!--
+    Topic: HTML Accessibility
+    Purpose: Template page demonstrating comprehensive HTML accessibility features and best practices.
+    Features:
+        - Semantic HTML5 elements for landmarks and structure
+        - Proper use of alt text for images
+        - Form inputs with associated labels and ARIA attributes
+        - Landmark roles and skip link for keyboard navigation
+        - ARIA live regions for dynamic content updates
+        - Keyboard focus management with tabindex and visible focus styles (CSS included)
+        - Screen reader-only text for additional instructions
+        - Accessible table structure example
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-06-11
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Comprehensive template demonstrating HTML accessibility best practices."
+        />
+        <meta
+            name="keywords"
+            content="HTML, Accessibility, ARIA, semantic HTML"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Accessibility Best Practices</title>
+        <style>
+            /* Visible focus outline for keyboard users */
+            a:focus,
+            button:focus,
+            input:focus {
+                outline: 3px solid #005fcc;
+                outline-offset: 2px;
+            }
+
+            /* Screen reader only */
+            .sr-only {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                border: 0;
+            }
+
+            /* Show skip link when focused */
+            .sr-only:focus {
+                position: static;
+                width: auto;
+                height: auto;
+                margin: 1rem;
+                clip: auto;
+                overflow: visible;
+                background: #005fcc;
+                color: white;
+                padding: 0.5rem 1rem;
+                z-index: 1000;
+                display: inline-block;
+                border-radius: 4px;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Skip link for keyboard users to jump to main content -->
+        <a href="#main-content" class="sr-only">Skip to main content</a>
+
+        <!-- Main landmark -->
+        <header role="banner">
+            <h1>HTML Accessibility Best Practices</h1>
+        </header>
+
+        <!-- Navigation landmark with aria-label -->
+        <nav role="navigation" aria-label="Primary navigation">
+            <ul>
+                <li><a href="#" tabindex="0">Home</a></li>
+                <li><a href="#" tabindex="0">Articles</a></li>
+                <li><a href="#" tabindex="0">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main content landmark -->
+        <main id="main-content" role="main">
+            <!-- Image with alt text -->
+            <img
+                src="profile.jpg"
+                alt="Profile photo of Rayhana Akter Sumaya"
+            />
+            <br /><br />
+
+            <!-- Accessible form with labels and aria-required -->
+            <form>
+                <fieldset>
+                    <legend>Subscribe to our newsletter</legend>
+
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        aria-required="true"
+                        required
+                        placeholder="example@mail.com"
+                        aria-describedby="email-instruction"
+                    />
+
+                    <!-- Screen reader instruction -->
+                    <p class="sr-only" id="email-instruction">
+                        Please enter a valid email address.
+                    </p>
+
+                    <button type="submit">Subscribe</button>
+                </fieldset>
+            </form>
+
+            <br />
+
+            <!-- Live region for dynamic content updates -->
+            <div aria-live="polite" aria-atomic="true" id="live-region">
+                Your settings have been saved.
+            </div>
+
+            <br />
+
+            <!-- Accessible data table -->
+            <table border="1" aria-labelledby="table-caption">
+                <caption id="table-caption" class="sr-only">
+                    User Registration Info
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rayhana Akter Sumaya</td>
+                        <td>rayhana@example.com</td>
+                        <td>Active</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer role="contentinfo">
+            <p>&copy; 2025 Rayhana Akter Sumaya</p>
+        </footer>
+    </body>
+</html>
