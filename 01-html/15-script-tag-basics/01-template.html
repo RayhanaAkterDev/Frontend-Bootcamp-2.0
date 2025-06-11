@@ -1,0 +1,45 @@
+<!--
+    Topic: Script Tag Basics
+    Purpose: Learn the basics of the HTML <script> tag and how to include JavaScript in an HTML document
+    Features:
+        - Demonstrate inline JavaScript with <script> tag
+        - Show how to include external JavaScript files
+        - Explain placement of <script> tags in HTML structure
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-06-11
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Template page demonstrating Script Tag Basics in HTML."
+        />
+        <meta name="keywords" content="Script tag, JavaScript, HTML" />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Script Tag Basics</title>
+    </head>
+    <body>
+        <h1>Script Tag Basics</h1>
+
+        <!-- Inline JavaScript example -->
+        <p id="demo">This text will change by JavaScript.</p>
+
+        <script>
+            // This script changes the text inside the paragraph with id "demo"
+            document.getElementById('demo').textContent =
+                'Hello from inline JavaScript!';
+        </script>
+
+        <p>Check the console for messages from external script (if linked).</p>
+
+        <script>
+            // Example of a console log to show script is working
+            alert('Script tag basics loaded.');
+        </script>
+    </body>
+</html>
