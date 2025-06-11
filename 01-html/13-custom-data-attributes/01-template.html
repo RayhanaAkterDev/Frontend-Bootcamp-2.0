@@ -1,0 +1,87 @@
+<!--
+    Topic: Custom Data Attributes
+    Purpose: Learn how to use HTML5 data-* attributes to store extra information on HTML elements and access them with JavaScript.
+    Features:
+        - Shows how to add custom data attributes in HTML
+        - Demonstrates accessing data attributes using JavaScript
+        - Explains usefulness for storing extra info without affecting markup
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-06-11
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Example demonstrating custom data attributes in HTML and how to access them with JavaScript."
+        />
+        <meta
+            name="keywords"
+            content="Custom Data Attributes, HTML5, data-attributes, JavaScript"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Custom Data Attributes</title>
+        <style>
+            ul li {
+                cursor: pointer;
+            }
+            #info {
+                margin-top: 20px;
+                font-weight: bold;
+                color: #333;
+                padding: 8px;
+                width: fit-content;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Custom Data Attributes Example</h1>
+
+        <p>Hover over the items to see data attributes in action:</p>
+
+        <ul>
+            <li data-id="101" data-category="fruit" data-price="1.99">Apple</li>
+            <li data-id="102" data-category="fruit" data-price="2.49">
+                Banana
+            </li>
+            <li data-id="103" data-category="vegetable" data-price="0.99">
+                Carrot
+            </li>
+        </ul>
+
+        <p>
+            You can see data attributes in the browser's developer tools
+            anytime. The info below updates only when JavaScript runs on hover.
+        </p>
+
+        <div id="info"></div>
+
+        <script>
+            // Select all list items
+            const items = document.querySelectorAll('li');
+
+            // Select the info div to display details
+            const infoDiv = document.getElementById('info');
+
+            items.forEach((item) => {
+                // When mouse enters item, show data attributes
+                item.addEventListener('mouseenter', () => {
+                    const id = item.dataset.id; // data-id
+                    const category = item.dataset.category; // data-category
+                    const price = item.dataset.price; // data-price
+
+                    infoDiv.textContent = `ID: ${id} | Category: ${category} | Price: $${price}`;
+                });
+
+                // When mouse leaves, clear info
+                item.addEventListener('mouseleave', () => {
+                    infoDiv.textContent = '';
+                });
+            });
+        </script>
+    </body>
+</html>
