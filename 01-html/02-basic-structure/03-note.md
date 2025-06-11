@@ -1,6 +1,6 @@
 # HTML Basic Structure
 
-> Tags: html-basics-structure.  
+> Tags: html-basics-structure  
 > _Purpose:_ Understand the basic structure of html document.
 
 ---
@@ -13,9 +13,13 @@
 - `<html lang="en">` sets the page language to English.
 - `<head>` contains metadata about the document, such as the page title and links to external resources.
 - `<meta>` tags serve various purposes, for example:
-  - `<meta charset="UTF-8">` ensures proper character encoding and display.
-  - `<meta name="viewport" content="width=device-width, initial-scale=1.0">` enables responsive design for mobile devices.
-  - `<meta name="description" content="Template page demonstrating HTML5 basic structure."/>` helps with SEO (search engine optimization) and improves accessibility.
+
+> - `<meta charset="UTF-8">` ensures proper character encoding and display.  
+> - `<meta name="viewport" content="width=device-width, initial-scale=1.0">` enables responsive design for mobile devices.  
+> - `<meta name="description" content="Template page demonstrating HTML5 basic structure.">` helps with SEO (search engine optimization) and improves accessibility.  
+> - `<meta name="author" content="Rayhana Akter Sumaya">` specifies the name of the document’s author.  
+> - `<meta name="keywords" content="HTML, meta tags, basic structure">` provides a list of keywords for search engines (largely outdated and ignored today).
+
 - `<title>` defines the title of the webpage, shown on the browser tab.
 - `<body>` contains the content that is visible to users.
 
