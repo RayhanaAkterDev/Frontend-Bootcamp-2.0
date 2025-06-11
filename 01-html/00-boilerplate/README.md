@@ -19,7 +19,7 @@
 
 ### Code links
 
-- [Template code](01-template.html)
-- [Exercise code](02-exercise.html)
+- [Template code](./template/template.html)
+- [Practice code](./practice/index.html)
 
 ---
