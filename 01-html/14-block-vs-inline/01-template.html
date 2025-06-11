@@ -1,0 +1,78 @@
+<!--
+    Topic: Block vs Inline Elements
+    Purpose: Understand the difference between block and inline elements in HTML
+    Features:
+        - Demonstrates common block elements
+        - Demonstrates common inline elements
+        - Visual structure with borders for clarity
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-06-11
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta settings for page encoding, responsiveness, and SEO -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Template page demonstrating block vs inline elements in HTML."
+        />
+        <meta name="keywords" content="Block elements, Inline elements, HTML" />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+
+        <!-- Page title -->
+        <title>Block vs Inline Elements</title>
+
+        <!-- Basic styling to show borders and layout differences -->
+        <style>
+            /* Style for both block and inline demo containers */
+            .box {
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #666;
+            }
+
+            /* Inline elements get background and border for visibility */
+            .inline-demo span,
+            .inline-demo a,
+            .inline-demo strong,
+            .inline-demo em {
+                margin: 2px;
+                padding: 4px;
+                border: 1px solid #0077cc;
+                background-color: rgba(255, 192, 203, 0.6);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Block vs Inline Elements</h1>
+
+        <!-- Block elements -->
+        <h2>Block Elements</h2>
+        <div class="box">
+            <p>This is a paragraph, a block element</p>
+            <div>This is a div element</div>
+            <section>This is a section element</section>
+        </div>
+
+        <!-- Inline elements -->
+        <h2>Inline Elements</h2>
+        <div class="box inline-demo">
+            <span>This is a span</span>
+            <a href="#">This is a link</a>
+            <strong>This is bold text</strong>
+            <em>This is italic text</em>
+        </div>
+
+        <!-- Key conceptual difference -->
+        <h2>Key Difference</h2>
+        <p>
+            Block elements take up the full width available and start on a new
+            line. Inline elements only take up as much width as necessary and
+            stay in the same line.
+        </p>
+    </body>
+</html>
