@@ -1,0 +1,78 @@
+<!--
+    Topic: HTML Entities
+    Purpose: Learn how to use HTML character entities to display reserved or invisible characters.
+    Features:
+        - Displays commonly used character entities
+        - Explains the need for entities in HTML syntax
+        - Shows named and numeric character references
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-06-11
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Template page demonstrating HTML Entities."
+        />
+        <meta
+            name="keywords"
+            content="HTML Entities, Reserved Characters, HTML"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Entities</title>
+    </head>
+    <body>
+        <h1>HTML Entities</h1>
+        <p>
+            Some characters have special meanings in HTML. To display these
+            characters correctly on the page, we use HTML entities.
+        </p>
+
+        <!-- Common reserved characters like <, >, &, " -->
+        <section>
+            <h2>Common Reserved Characters</h2>
+            <ul>
+                <li><code>&amp;amp;</code> → &amp;</li>
+                <li><code>&amp;lt;</code> → &lt;</li>
+                <li><code>&amp;gt;</code> → &gt;</li>
+                <li><code>&amp;quot;</code> → &quot;</li>
+                <li><code>&amp;apos;</code> → &apos;</li>
+            </ul>
+        </section>
+
+        <!-- Special symbols like ©, €, ® etc. -->
+        <section>
+            <h2>Special Symbols</h2>
+            <ul>
+                <li><code>&amp;copy;</code> → &copy;</li>
+                <li><code>&amp;reg;</code> → &reg;</li>
+                <li><code>&amp;euro;</code> → &euro;</li>
+                <li><code>&amp;yen;</code> → &yen;</li>
+                <li><code>&amp;pound;</code> → &pound;</li>
+            </ul>
+        </section>
+
+        <!-- Using numeric codes to display symbols -->
+        <section>
+            <h2>Numeric Character Reference</h2>
+            <p>
+                You can use numbers instead of names:<br />
+                <code>&amp;#169;</code> → &#169; (©)
+            </p>
+        </section>
+
+        <!-- Display non-breaking space -->
+        <section>
+            <h2>Non-Breaking Space</h2>
+            <p>
+                Use <code>&amp;nbsp;</code> to keep words together:<br />
+                This&nbsp;sentence&nbsp;has&nbsp;non-breaking&nbsp;spaces.
+            </p>
+        </section>
+    </body>
+</html>
