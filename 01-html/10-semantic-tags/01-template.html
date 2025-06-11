@@ -1,0 +1,96 @@
+<!--
+    Topic: HTML Semantic Tags
+    Purpose: Demonstrate the use of semantic tags with accessibility enhancements
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-06-10
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Template page demonstrating HTML Semantic Tags."
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>HTML Semantic Tags</title>
+        <style>
+            .skip-link {
+                position: absolute;
+                top: -40px;
+                left: 0;
+                background: #000;
+                color: #fff;
+                padding: 8px;
+                z-index: 100;
+                transition: top 0.3s;
+            }
+
+            .skip-link:focus {
+                top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Skip link for keyboard users -->
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+
+        <!-- Header element containing site title and logo -->
+        <header>
+            <h1>My Personal Blog</h1>
+            <p>Welcome to my thoughts and stories</p>
+
+            <!-- Navigation bar for site links -->
+            <nav aria-label="Primary navigation">
+                <ul>
+                    <li><a href="#" aria-current="page">Home</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main content of the page -->
+        <main id="main-content" role="main" tabindex="-1">
+            <!-- Section for blog posts -->
+            <section>
+                <h2>Latest Posts</h2>
+
+                <!-- Individual article -->
+                <article>
+                    <h3>Why Learn HTML?</h3>
+                    <p>
+                        HTML is the foundation of all web content. Understanding
+                        it is essential for web development.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Benefits of Semantic Tags</h3>
+                    <p>
+                        Semantic tags help screen readers and improve SEO by
+                        giving meaning to page structure.
+                    </p>
+                </article>
+            </section>
+
+            <!-- Aside for extra or side content -->
+            <aside role="complementary" aria-label="About the author">
+                <h3>About the Author</h3>
+                <p>
+                    Hi! I'm Sumaya, a CSE student sharing my journey in web
+                    development.
+                </p>
+            </aside>
+        </main>
+
+        <!-- Footer section -->
+        <footer role="contentinfo" aria-label="Site footer">
+            <p>&copy; 2025 Rayhana Akter Sumaya. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
