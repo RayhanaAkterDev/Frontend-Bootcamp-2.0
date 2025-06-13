@@ -1,0 +1,40 @@
+/* External CSS Example */
+body {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    color: darkgreen;
+}
+
+header {
+    text-align: center;
+}
+
+header > h1 {
+    color: darkblue;
+}
+/* Style introduction paragraph */
+header .intro {
+    padding: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+.external-css-demo {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: #f0f8ff;
+}
+
+.external-css-demo h2 {
+    color: crimson;
+}
+
+footer {
+    margin-top: 60px;
+    padding-top: 10px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
