@@ -1,0 +1,97 @@
+<!--
+    Topic: CSS Selectors and Specificity
+    Purpose: Learn and practice various CSS selectors and understand specificity hierarchy.
+    Features:
+        - Using type, class, ID, attribute, pseudo-class, descendant, child, group, and universal selectors
+        - Demonstrating specificity differences including inline styles and rule order
+        - Practical examples of selector usage on HTML elements
+        - Pseudo-element usage (::before)
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-06-13
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Template page demonstrating CSS selectors and specificity with practical examples."
+        />
+        <meta
+            name="keywords"
+            content="CSS Selectors, Specificity, Frontend, CSS"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Selectors and Specificity</title>
+
+        <!-- CSS links -->
+        <link rel="stylesheet" href="../../reset.css" />
+        <link rel="stylesheet" href="template-style.css" />
+    </head>
+    <body>
+        <main>
+            <h1>CSS Selectors and Specificity Practice</h1>
+
+            <!-- Paragraph styled by type selector -->
+            <p>
+                This paragraph is styled by a <code>type selector</code> (all
+                <code>&lt;p&gt;</code> tags).
+            </p>
+
+            <!-- Paragraph styled by class selector -->
+            <p class="test-class-selector">
+                This paragraph has a <code>class selector</code> that adds a
+                turquoise background.
+            </p>
+
+            <!-- Paragraph styled by ID selector -->
+            <p id="test-id-selector">
+                This paragraph uses an <code>ID selector</code> with red bold
+                text.
+            </p>
+
+            <!-- Input styled by attribute selector -->
+            <input
+                size="35"
+                type="text"
+                placeholder="Text input styled with attribute selector"
+            />
+
+            <!-- Paragraph demonstrating pseudo class & elements selector -->
+            <p class="text-pseudo">
+                Hover over this text to see pseudo-class effect
+            </p>
+
+            <!-- Span inside div styled by descendant selector -->
+            <div>
+                <span
+                    >This span inside a div is italic using descendant
+                    selector.</span
+                >
+            </div>
+
+            <!-- List items styled by child selector -->
+            <ul class="styled-list">
+                <li>First list item</li>
+                <li>Second list item</li>
+            </ul>
+
+            <!-- Paragraph and link sharing font styles using group selector -->
+            <div class="group-style">
+                <p>
+                    This paragraph shares font style with the link below using
+                    group selector.
+                </p>
+                <a href="#">I'm part of the group too!</a>
+            </div>
+
+            <!-- Conflicting class rule example -->
+            <p class="conflict">
+                This shows how the last rule with same specificity wins.
+            </p>
+        </main>
+    </body>
+</html>

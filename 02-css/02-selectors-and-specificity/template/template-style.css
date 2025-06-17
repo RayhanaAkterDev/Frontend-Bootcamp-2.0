@@ -1,0 +1,123 @@
+/*
+    CSS Selectors and Specificity Practice
+
+    This stylesheet demonstrates different types of CSS selectors
+    and explains the concept of specificity.
+
+    Specificity hierarchy (lowest to highest):
+        - Universal selector (*) — 0
+        - Type selectors (div, p, h1), pseudo-elements (::before) — 1
+        - Class selectors (.class), attribute selectors ([attr]), pseudo-classes (:hover) — 10
+        - ID selectors (#id) — 100
+        - Inline styles (style attribute) — 1000
+
+    Note: When two rules have the same specificity, the rule that appears later in the CSS wins.
+*/
+
+/* 1. Universal selector: applies to all elements */
+* {
+    font-size: 14px; /* global font size for practice */
+}
+
+/* 2. Type selector: styles all <p> elements */
+body {
+    font-family: Arial, sans-serif;
+}
+p {
+    padding: 10px;
+    margin: 10px;
+}
+p:not(.test-class-selector) {
+    background-color: pink;
+    border: 1px solid crimson;
+}
+
+/* 3. Class selector: styles all elements with class "test-class-selector" */
+.test-class-selector {
+    border-color: blue;
+    background-color: skyblue;
+}
+
+/* 4. ID selector: styles element with id "test-id-selector" */
+#test-id-selector {
+    color: crimson;
+    font-weight: bold;
+}
+
+/* 5. Attribute selector: styles input elements with type="text" */
+input[type='text'] {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid limegreen;
+    outline: none;
+}
+
+input[type='text']:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.6);
+}
+
+/* 6. Pseudo class & element selectors: styles paragraph on hover */
+.text-pseudo {
+    transition: all linear 0.3s;
+}
+.text-pseudo:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid transparent;
+}
+.text-pseudo::after {
+    content: 'with pseudo elements ❤️';
+    display: inline-block;
+    margin-left: 6px;
+    font-style: italic;
+    border-bottom: 1px dashed #444;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* 7. Descendant selector: styles <span> elements inside <div> */
+div {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid;
+}
+div span {
+    font-style: italic;
+}
+
+/* 8. Child selector: styles direct <li> children of <ul> */
+.styled-list {
+    margin-left: 30px;
+}
+.styled-list > li {
+    list-style: square inside;
+    color: red;
+}
+
+.styled-list > li:nth-child(even) {
+    font-weight: bold;
+}
+.styled-list > li:first-child {
+    font-style: italic;
+    text-decoration: underline;
+}
+.styled-list > li:last-child {
+    color: darkblue;
+    text-transform: uppercase;
+}
+
+/* 9. Group selector: applies same font family to <p> and <a> */
+.group-style p,
+.group-style a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* 10. Same specificity (class), second rule wins due to order */
+.conflict {
+    color: green;
+}
+
+.conflict {
+    color: blue; /* this will override the previous one */
+}
