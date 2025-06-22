@@ -1,0 +1,16 @@
+/* CSS Box Model Practice
+    Demonstrates content, padding, border, margin and box-sizing property.
+*/
+
+.box {
+    font-size: 18px;
+    width: 300px;
+    height: 150px;
+    background-color: skyblue;
+    padding: 20px; /* space inside border */
+    border: 5px solid #0f5132; /* border thickness and color */
+    margin: 30px; /* space outside border */
+    color: #0f5132;
+    font-weight: bold;
+    box-sizing: content-box; /* Change to border-box to see difference */
+}
