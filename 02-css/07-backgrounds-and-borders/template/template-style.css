@@ -1,0 +1,67 @@
+/*
+    CSS Backgrounds & Borders Practice
+    Demonstrates a variety of background and border properties:
+        - background-color, background-image, background-repeat, background-position
+        - linear-gradient, background-size, background-blend-mode
+        - border styles, border-width, border-color, border-radius, border shorthand
+*/
+
+section {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #e0f7fa;
+}
+
+/* Background color */
+.background-color {
+    background-color: #dff0d8;
+}
+
+/* Background image */
+.background-image {
+    background-image: url('https://images.unsplash.com/photo-1471899236350-e3016bf1e69e?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 400px;
+}
+
+/* Linear gradient background */
+.linear-gradient {
+    background-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+    color: #fff;
+    padding: 2rem;
+}
+
+/* Background blend mode */
+.background-blend {
+    height: 400px;
+    background-image: url('https://images.unsplash.com/photo-1471899236350-e3016bf1e69e?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),
+        linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
+    background-blend-mode: multiply; /* overlay alternative commented */
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    padding: 2rem;
+}
+
+/* Border styles */
+.border-example {
+    border: 3px solid steelblue;
+}
+
+/* Rounded border */
+.border-radius {
+    border: 2px solid #ff0000;
+    border-radius: 12px;
+}
+
+/* Dashed border */
+.border-dashed {
+    border: 3px dashed #f39c12;
+}
+
+/* Border shorthand */
+.border-shorthand {
+    border: thick double #32a1ce;
+}
