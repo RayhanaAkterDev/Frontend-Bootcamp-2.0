@@ -1,0 +1,71 @@
+/*
+    CSS Typography Practice
+    Demonstrates common typography-related CSS properties:
+        - Font families: serif, sans-serif, monospace
+        - Font styling: italic, bold, small-caps
+        - Font size and spacing: font-size, letter-spacing, line-height
+*/
+
+/* ===== Section Wrappers ===== */
+#font-families,
+#font-styles,
+#font-sizes,
+#spacing {
+    margin: 20px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    border: 2px solid #ffccbc;
+    background-color: #ffecb3;
+    color: #bf360c;
+}
+
+/* ===== Shared Typography Blocks ===== */
+.serif,
+.sans-serif,
+.monospace,
+.italic,
+.bold,
+.small-caps,
+.large-text,
+.letter-spaced {
+    padding: 5px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 1px solid #bf360c;
+}
+
+/* ===== Font Families ===== */
+.serif {
+    font-family: 'Georgia', serif;
+}
+
+.sans-serif {
+    font-family: 'Helvetica', sans-serif;
+}
+
+.monospace {
+    font-family: 'Courier New', monospace;
+}
+
+/* ===== Font Styles ===== */
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.small-caps {
+    font-variant: small-caps;
+}
+
+/* ===== Font Size and Spacing ===== */
+.large-text {
+    font-size: 20px;
+}
+
+.letter-spaced {
+    line-height: 1.8;
+    letter-spacing: 2px;
+}
