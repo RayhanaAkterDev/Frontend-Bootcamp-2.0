@@ -1,0 +1,58 @@
+<!--
+    Topic: CSS Units and Measurements
+    Purpose: Demonstrate how to use absolute and relative CSS units for sizing elements responsively.
+    Features:
+        - Absolute units: px
+        - Relative units: %, em, rem
+        - Viewport units: vw, vh
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-06-22
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Practice examples demonstrating CSS units and measurements including px, %, em, rem, vw, and vh." />
+    <meta name="keywords" content="CSS, units, measurements, px, em, rem, vw, vh, frontend" />
+    <meta name="author" content="Rayhana Akter Sumaya" />
+    <title>CSS Units and Measurements Practice</title>
+
+    <!-- Reset CSS to normalize styles -->
+    <link rel="stylesheet" href="/02-css/reset.css" />
+    <!-- Main CSS stylesheet -->
+    <link rel="stylesheet" href="template-style.css" />
+</head>
+<body>
+    <main>
+        <h1>CSS Units and Measurements</h1>
+
+        <!-- Box with fixed width in pixels -->
+        <section class="box px-box" aria-label="Box with fixed width in pixels (300px)">
+            Box with fixed width: 300px (absolute unit)
+        </section>
+
+        <!-- Box with width relative to parent container -->
+        <section class="box percent-box" aria-label="Box with width 80% relative to parent container">
+            Box with width 80% (relative to parent)
+        </section>
+
+        <!-- Box with padding and font size relative to current font size -->
+        <section class="box em-box" aria-label="Box with padding and font size set in em units">
+            Box with padding and font size in em (relative to current font size)
+        </section>
+
+        <!-- Box with margin and font size relative to root font size -->
+        <section class="box rem-box" aria-label="Box with margin and font size set in rem units">
+            Box with margin and font size in rem (relative to root font size)
+        </section>
+
+        <!-- Box with width and height relative to viewport size -->
+        <section class="box vwvh-box" aria-label="Box with width and height relative to viewport size">
+            Box sized with viewport units: 50vw width, 20vh height
+        </section>
+    </main>
+</body>
+</html>

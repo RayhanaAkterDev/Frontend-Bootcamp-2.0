@@ -1,0 +1,56 @@
+/*
+    CSS Units & Measurements Practice
+    Demonstrates absolute and relative units like px, %, em, rem, vw, vh, and auto.
+*/
+:root {
+    --base-font: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.box {
+    border: 2px solid #444;
+    background-color: #d6f5e3;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* Absolute unit */
+.px-box {
+    width: 300px;
+}
+
+/* Relative to parent */
+.percent-box {
+    width: 80%;
+}
+
+/* Relative to current font size */
+.em-box {
+    padding: 2em; /* 32px if base font size is 16px*/
+    font-size: 2em; /* 32px if base is 16px */
+    background-color: #f0e68c;
+}
+
+/* Relative to root font size */
+.rem-box {
+    margin: 2rem 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #f5b7b1;
+}
+
+/* Viewport based units */
+.vwvh-box {
+    width: 50vw;
+    height: 20vh;
+    background-color: #c1d3f5;
+}
