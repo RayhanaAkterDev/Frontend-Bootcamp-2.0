@@ -1,0 +1,64 @@
+<!--
+    Topic: CSS Float & Clear
+    Purpose: Demonstrate how floating elements works and how to clear floats to control layout flow.
+    Features:
+        - Floating images and text wrapping
+        - Using clearfix to contain floats
+        - Clearing floats to avoid layout issues
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-06
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Example demonstrating CSS float and clear properties for layout control."
+        />
+        <meta name="keywords" content="CSS, float, clear, layout, frontend" />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>CSS Float & Clear Example</title>
+
+        <!-- CSS links -->
+        <link rel="stylesheet" href="/02-css/reset.css" />
+        <link rel="stylesheet" href="template-style.css" />
+    </head>
+    <body>
+        <main>
+            <h1>Float & Clear Example</h1>
+
+            <div class="container">
+                <img
+                    src="https://images.unsplash.com/photo-1471899236350-e3016bf1e69e?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    width="150"
+                    alt="Sample"
+                    class="float-left"
+                />
+
+                <p>
+                    This paragraph wraps around the floated image. Floats can be
+                    used for text wrapping or layout purposes. If not cleared,
+                    the next section may behave unexpectedly due to the floating
+                    context.
+                </p>
+
+                <div class="clearfix">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Culpa, commodi!
+                </div>
+            </div>
+
+            <section class="cleared-box">
+                <h2>This section is cleared</h2>
+                <p>
+                    Because we used <code>clear: both;</code>, this block starts
+                    below the floated image and text block.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

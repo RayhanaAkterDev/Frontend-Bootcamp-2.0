@@ -1,0 +1,45 @@
+/*
+    CSS Float & Clear
+    Demonstrates how to float elements and clear them to control layout.
+*/
+
+.container {
+    background-color: #eef6e9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* .container > p {
+    clear: both;
+} */
+
+img.float-left {
+    float: left;
+    margin-right: 20px;
+    border: 2px solid green;
+    clear: both;
+}
+
+/* Try commenting this out to observe how the layout breaks without clearfix */
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* .clearfix {
+    clear: both;
+} */
+
+.cleared-box {
+    padding: 15px;
+    background-color: #dceef2;
+    border: 1px solid #bbb;
+    clear: both;
+}
+
+h2 {
+    color: darkblue;
+    margin-bottom: 10px;
+}
