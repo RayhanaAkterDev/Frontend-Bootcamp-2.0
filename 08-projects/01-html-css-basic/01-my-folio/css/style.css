@@ -1,0 +1,48 @@
+/* Set root font size */
+html {
+    font-size: 16px; /* 1rem = 16px */
+}
+
+/* Accessible Skip Link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 0.5em 1em;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Navbar Section Starts Here */
+#navbar {
+    height: 3.75rem; /* 60px */
+    background-color: #02918c;
+}
+
+.nav-logo {
+    float: left;
+    line-height: 3.75rem; /* 60px */
+}
+
+.nav-menu {
+    float: right;
+    line-height: 3.75rem; /* 60px */
+}
+
+.nav-menu ul li {
+    float: left;
+    margin-left: 3.125rem; /* 50px */
+}
+
+.nav-menu ul li a {
+    color: #fff;
+    font-size: 0.75rem; /* 12px */
+    font-weight: 800;
+    text-transform: uppercase;
+}
