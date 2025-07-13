@@ -25,6 +25,8 @@ HTML lists organize content using bullets, numbers, or definition formats.
 </dl>
 ```
 
+> Note: List types (e.g., disc, circle, decimal) are defined using CSS `list-style-type`. This will be discussed in CSS topics.
+
 ---
 
 - The `<a>` tag creates hyperlinks. These can be internal (within the site or page) or external (to another website).
@@ -37,7 +39,14 @@ HTML lists organize content using bullets, numbers, or definition formats.
 
 ---
 
-> Note: List types (e.g., disc, circle, decimal) are defined using CSS `list-style-type`. This will be discussed in CSS topics.
+### Use cases of `<a>` and `<button>`
+
+| `<a>`                             | `<button>`               |
+|----------------------------------|-------------------------|
+| It navigates to a section on the page | Opening a mobile menu    |
+| It links to another webpage       | Submitting a form       |
+| It navigates to external URLs     | Toggling UI elements    |
+| Used inside navigation menus      | Triggering JavaScript actions |
 
 ---
 
