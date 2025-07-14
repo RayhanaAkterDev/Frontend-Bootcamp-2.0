@@ -1,0 +1,89 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+.box {
+    background-color: teal;
+    color: white;
+    padding: 2rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+/* Extra Small Devices: up to 575px (phones) */
+@media (max-width: 575px) {
+    .box {
+        background-color: crimson;
+        font-size: 1rem;
+    }
+}
+
+/* Small Devices: 576px to 767px (landscape phones) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .box {
+        background-color: darkorange;
+        font-size: 1.1rem;
+    }
+}
+
+/* Medium Devices: 768px to 991px (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .box {
+        background-color: royalblue;
+        font-size: 1.3rem;
+    }
+}
+
+/* Large Devices: 992px to 1199px (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .box {
+        background-color: seagreen;
+        font-size: 1.4rem;
+    }
+}
+
+/* Extra Large Devices: 1200px to 1399px (large desktops ) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .box {
+        background-color: teal;
+        font-size: 1.5rem;
+    }
+}
+
+/* XXL Devices: 1400px and up */
+@media (min-width: 1400px) {
+    .box {
+        background-color: navy;
+        font-size: 1.6rem;
+    }
+}
+
+/* Landscape orientation */
+@media (orientation: landscape) {
+    .box {
+        border: 3px dashed black;
+    }
+}
+
+/* Portrait orientation */
+@media (orientation: portrait) {
+    .box {
+        border: 3px dotted green;
+    }
+}
+
+/* High resolution (Retina) screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .box::after {
+        content: 'High-res screen';
+        display: block;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        color: #555;
+        background-color: red;
+    }
+}
