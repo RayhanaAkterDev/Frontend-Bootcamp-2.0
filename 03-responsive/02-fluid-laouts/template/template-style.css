@@ -1,0 +1,63 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+/* 🌊 Fluid Container Layout */
+.container {
+    width: 80%;               /* 80% of the parent (body), making it fluid */
+    max-width: 1200px;        /* Limits the max width for large screens */
+    margin: 0 auto;           /* Centers the container horizontally */
+    background-color: #004f99;
+    border-radius: 0 0 50px 50px;
+    color: white;
+}
+
+/* 📏 Header with Viewport Units */
+.header {
+    width: 100vw;             /* Takes full width of the visible browser window */
+    height: 10vh;             /* 10% of the viewport height */
+    line-height: 10vh;        /* Vertically center the text inside the header */
+    background-color: red;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    /* 💡 Fine-tuned horizontal shift using a mix of viewport and rem units */
+    margin-left: calc(-10vw + 2rem);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    /*
+        🔍 Why margin-left: calc(-10vw + 2rem)?
+        ---------------------------------------
+        -100vw = full screen width.
+        -10vw = shift left by 10% of viewport width.
+        - But if it's too much, we add 2rem (32px approx) back to reduce the shift.
+
+        Example:
+        If viewport width = 1600px, then:
+        -10vw = -160px
+        +2rem (assuming 1rem = 16px) = +32px
+        Final margin-left = -128px (slightly less shifted)
+
+        ✅ This lets us position the header fluidly, yet still control the layout precisely.
+    */
+}
+
+/* 📰 Content Section */
+.content {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    margin-top: 5rem;
+    /* This area benefits from the fluid container's width and max-width */
+}
+
+/* 🦶 Footer Section */
+.footer {
+    padding: 0.5rem;
+    background-color: #003366;
+    border-radius: 0 0 50px 50px;
+}

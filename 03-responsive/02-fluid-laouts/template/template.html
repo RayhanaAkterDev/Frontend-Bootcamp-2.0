@@ -1,0 +1,54 @@
+<!--
+    Topic: Fluid Layouts
+    Purpose: Learn how to build layouts using relative units like percentages and viewport units that adapt fluidly across screen sizes.
+    Features:
+        - Container widths in percentages
+        - Using viewport width and height units
+        - Combining fluid widths with max-width limits
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-14
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Learn fluid layout techniques using relative and viewport units in CSS."
+        />
+        <meta
+            name="keywords"
+            content="Fluid Layout, Responsive Design, CSS, Frontend"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Fluid Layouts</title>
+
+        <!-- CSS links -->0
+        <link rel="stylesheet" href="/reset.css" />
+        <link rel="stylesheet" href="template-style.css" />
+    </head>
+    <body>
+        <h1>Fluid Layouts</h1>
+
+        <main>
+            <section class="container">
+  .              <header class="header">
+                    Header - 10vh height, full viewport width
+                </header>
+                <article class="content">
+                    <p>
+                        This container is 80% wide, centered, and resizes
+                        fluidly with the viewport.
+                    </p>
+                    <p>
+                        The max-width limits how wide it grows on large screens.
+                    </p>
+                </article>
+                <footer class="footer">Footer</footer>
+            </section>
+        </main>
+    </body>
+</html>
