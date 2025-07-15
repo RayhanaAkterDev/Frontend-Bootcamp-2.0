@@ -1,0 +1,57 @@
+<!--
+    Topic: Advanced Flexbox Layout
+    Purpose: Explore all core properties of CSS Flexbox for building complex responsive layouts.
+    Features:
+        - Flex direction and wrap behavior
+        - Alignment and spacing utilities
+        - Flex item sizing and ordering
+        - Nested flex containers for layout composition
+    Author: Rayhana Akter Sumaya
+    Email: rayhanaaktersumaya.dev@gmail.com
+    Date: 2025-07-15
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Advanced responsive layout using full features of CSS Flexbox."
+        />
+        <meta
+            name="keywords"
+            content="Flexbox, Responsive Layout, CSS, Frontend"
+        />
+        <meta name="author" content="Rayhana Akter Sumaya" />
+        <title>Advanced Flexbox Layout</title>
+
+        <!-- CSS links -->
+        <link rel="stylesheet" href="/reset.css" />
+        <link rel="stylesheet" href="template-style.css" />
+    </head>
+    <body>
+        <h1>Advanced Flexbox Layout</h1>
+
+        <main class="main-container">
+            <aside class="sidebar">Sidebar</aside>
+
+            <section class="content-area">
+                <div class="top-row">
+                    <div class="item grow">Grow 2</div>
+                    <div class="item shrink">Shrink</div>
+                    <div class="item order">Order -1</div>
+                </div>
+
+                <div class="bottom-row">
+                    <div class="nested-flex">
+                        <div class="nested-box">Box A</div>
+                        <div class="nested-box">Box B</div>
+                        <div class="nested-box">Box C</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
